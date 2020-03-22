@@ -1,0 +1,6 @@
+#Ignores VHDL
+/**/_output
+/**/ghdl_scripts
+
+000_Get_started_adder
+D_flip_flop
