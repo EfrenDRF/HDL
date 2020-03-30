@@ -1,5 +1,6 @@
 #Ignores VHDL
 /**/_output
 /**/ghdl_scripts
+/**/__pycache__
 
 000_Get_started_adder

@@ -1,0 +1,4 @@
+../../sr_latch/build/GLOBAL_SR_LATCH.pgj
+../src/dff.vhdl
+../src/dff_pkg.vhdl
+../src/dff_tb.vhdl

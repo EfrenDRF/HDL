@@ -1,0 +1,5 @@
+../src/sr_latch.vhdl
+../src/sr_latch_pkg.vhdl
+../src/nand_sr_latch_tb.vhdl
+../src/nor_sr_latch_tb.vhdl
+
