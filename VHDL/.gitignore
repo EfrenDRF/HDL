@@ -2,5 +2,6 @@
 /**/_output
 /**/ghdl_scripts
 /**/__pycache__
+/**/auto_generated_ghld_commands.sh
 
 000_Get_started_adder

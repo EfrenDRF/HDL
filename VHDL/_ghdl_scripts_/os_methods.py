@@ -3,14 +3,12 @@
 # Date: 29/ March/2020
 
 
-
-
 import os
 import re
 
 
 GET_FILE_NAME_NOT_OK = False
-
+TB_FILE_NOT_OK = False
 
 #---------------------------------------------------
 #- 
@@ -73,4 +71,13 @@ def get_content_from_dot_pgj_file(fileName):
 def get_file_name(full_file_path):
     fileName = re.search(r'\w*.((vhdl)|(pgj))', full_file_path)
     returnValue = fileName.group() if (fileName != None) else GET_FILE_NAME_NOT_OK
+    return returnValue
+
+
+#---------------------------------------------------
+#-
+#---------------------------------------------------
+def compare_testBench_File(vhdlFileName):
+    tb_fileName = re.search(r'\w*_(tb.vhdl)+?', vhdlFileName)
+    returnValue = tb_fileName.group().replace(".vhdl","") if (tb_fileName != None) else TB_FILE_NOT_OK
     return returnValue

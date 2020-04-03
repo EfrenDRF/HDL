@@ -1,6 +1,7 @@
 #!/bin/bash 
 clear
 
+#Gets the path where the bash file has run
 working_dir=$(dirname $(realpath $0))
 
 #regular expression
@@ -8,8 +9,6 @@ working_dir=$(dirname $(realpath $0))
 mainFolder=$BASH_REMATCH
 ghdlScriptsFolder="${mainFolder}/_ghdl_scripts_/"
 
-#execute python script
-python "${ghdlScriptsFolder}main_ghdl.py"
 
-
-
+#Run bash script
+"${ghdlScriptsFolder}build.sh"
